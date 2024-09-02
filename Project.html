@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJP Coder</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="image/fav-icon.jpg" type="image/x-icon">
+  
+</head>
+<body>
+    <div id="protfolio">
+        <div class="container">
+          <h1 class="sub-title">Project list</h1>
+          <div class="work-list">
+            <div class="work" data-aos="fade-down" data-aos-duration="1400">
+              <img src="image/poet1.jpg" />
+              <div class="layer">
+                <h3>quote Genrated</h3>
+                <p>I made quote generator as a random poet, as paractice</p>
+                <a href="https://talharjp-123.github.io/quote-genrated/">
+                    <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work" data-aos="fade-down" data-aos-duration="1400">
+                <img src="image/work-1.png" />
+                <div class="layer">
+                  <h3>QR Code Generator</h3>
+                  <p>
+                    I made Qr code generator to make qr code of any website and this project as paractice
+                  </p>
+                  <a href="https://talharjp-123.github.io/qr-code/">
+                      <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="fade-down" data-aos-duration="1400">
+              <img src="image/weather.jpg" />
+              <div class="layer">
+                <h3>Weather App</h3>
+                <p>
+                  I have made a weather checking app, it can see us the current weather situation of a city , as paractice
+                </p>
+                <a href=" https://talharjp-123.github.io/weather/">
+                    <i class="fas fa-external-link-alt"></i></a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+      <div class="loader"></div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+      <script>
+        window.addEventListener("load",()=>{
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transition", ()=> {
+      document.body.removeChild("loader");
+    })
+  })
+      </script>
+
+</body>
+</html>
